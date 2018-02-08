@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace FOPCSAddExer
 {
-    class Program
+    class Program3a
     {
         static void Main(string[] args)
         {
-            for(int i = 1; i <=20; i++)
+            for(int i = 1; i <=20; i += 2)
             {
                 Console.Write("{0} ", i);
             }
@@ -18,13 +18,14 @@ namespace FOPCSAddExer
         }
     }
 
-    class Program2
+    class Program3b
     {
         static void Main(string[] args)
         {
-            for (int i = 20; i >= 1; i--)
+            for (int i = 1; i <= 20; i++)
             {
-                Console.Write("{0} ", i);
+                if(i % 2 != 0)
+                    Console.Write("{0} ", i);
             }
             Console.WriteLine();
         }
